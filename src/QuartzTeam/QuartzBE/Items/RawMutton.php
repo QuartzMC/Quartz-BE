@@ -1,7 +1,6 @@
 <?php
 
 namespace QuartzTeam\QuartzBE\Items;
-use pocketmine\item\{Item, Food};
 
 /*
  *
@@ -21,6 +20,8 @@ use pocketmine\item\{Item, Food};
  *
  *
 */
+
+use pocketmine\item\{Item, Food};
 
 class RawMutton extends Food {
 

@@ -2,9 +2,6 @@
 
 namespace QuartzTeam\QuartzBE\Items;
 
-use pocketmine\item\{Food,Item};
-use pocketmine\entity\Effect;
-
 /*
  *
  *    ____                   _              ____  ______ 
@@ -23,6 +20,9 @@ use pocketmine\entity\Effect;
  *
  *
 */
+
+use pocketmine\item\{Food,Item};
+use pocketmine\entity\Effect;
 
 class PoisonousPotato extends Food {
 	

@@ -1,6 +1,6 @@
 <?php
+
 namespace QuartzTeam\QuartzBE\Items;
-use pocketmine\item\{Item, ItemFactory};
 
 /*
  *
@@ -21,7 +21,10 @@ use pocketmine\item\{Item, ItemFactory};
  *
 */
 
-class AddedItems{	
+use pocketmine\item\{Item, ItemFactory};
+
+class AddedItems{
+	
 	public static function init(){
 		//Carrot on a stick
 	    ItemFactory::registerItem(new CarrotOnAStick(), true);

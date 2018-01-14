@@ -2,16 +2,6 @@
 
 namespace QuartzTeam\QuartzBE;
 
-//PocketMine
-use pocketmine\item\{Item, ItemFactory};
-use pocketmine\block\{Block, BlockFactory};
-use pocketmine\utils\{TextFormat as TF, Config};
-use pocketmine\plugin\PluginBase;
-use pocketmine\Server;
-use pocketmine\event\Listener;
-//QUartzBE
-use QuartzTeam\QuartzBE\Items\AddedItems;
-
 /*
  *
  *    ____                   _              ____  ______ 
@@ -31,9 +21,18 @@ use QuartzTeam\QuartzBE\Items\AddedItems;
  *
 */
 
+use pocketmine\item\{Item, ItemFactory};
+use pocketmine\block\{Block, BlockFactory};
+use pocketmine\utils\{TextFormat as TF, Config};
+use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
+use pocketmine\event\Listener;
+
+use QuartzTeam\QuartzBE\Items\AddedItems;
+
 class Main extends PluginBase implements Listener {
 
-	public function onEnable() {	
+	public function onEnable(){	
 		$this->saveDefaultConfig();
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->getServer()->getLogger()->info("
@@ -54,7 +53,7 @@ class Main extends PluginBase implements Listener {
 §e#################################################################");
 	}
 
-	public function onLoad() {
+	public function onLoad(){
 		if(Server::getInstance()->getName() !== "PocketMine-MP"){
 			$this->getLogger()->critical("This plugin is for PMMP only.");
 		}
@@ -66,7 +65,7 @@ class Main extends PluginBase implements Listener {
 		//AddedBlocks::init();
 	}
 	
-	public function onDisable() {
+	public function onDisable(){
 		$this->getServer()->getLogger()->info("
 §e#################################################################
 §e#§c    ____                   _              ____  ______ 

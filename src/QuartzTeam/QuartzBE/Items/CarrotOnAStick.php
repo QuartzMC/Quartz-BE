@@ -1,7 +1,6 @@
 <?php
 
 namespace QuartzTeam\QuartzBE\Items;
-use pocketmine\item\Item;
 
 /*
  *
@@ -22,7 +21,11 @@ use pocketmine\item\Item;
  *
 */
 
+use pocketmine\item\Item;
+
+
 class CarrotOnAStick extends Item{
+	
 	public function __construct(int $meta = 0){
 		parent::__construct(self::CARROT_ON_A_STICK, $meta, "Carrot on a Stick");
 	}
