@@ -1,7 +1,9 @@
 # Quartz-BE
 ===================
+![QuartzBE](https://github.com/QuartzMC/Quartz-BE/blob/master/images/banner.png)
 
-An completation plugin for Minecraft: Bedrock Edition v1.2.x !
+
+__A completation plugin for Minecraft: Bedrock Edition v1.2.x !__
 
 Introduction
 -------------
