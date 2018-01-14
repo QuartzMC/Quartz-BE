@@ -1,4 +1,4 @@
-# Quartz-BE
+Quartz-BE
 ===================
 ![QuartzBE](https://github.com/QuartzMC/Quartz-BE/blob/master/images/banner.png)
 
