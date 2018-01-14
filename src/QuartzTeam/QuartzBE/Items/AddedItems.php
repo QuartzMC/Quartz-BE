@@ -27,14 +27,14 @@ class AddedItems{
 	
 	public static function init(){
 		//Carrot on a stick
-	    ItemFactory::registerItem(new CarrotOnAStick(), true);
-	    Item::addCreativeItem(Item::get(398, 0));
+		ItemFactory::registerItem(new CarrotOnAStick(), true);
+		Item::addCreativeItem(Item::get(398, 0));
 		//Poisonous Potato
 		ItemFactory::registerItem(new PoisonousPotato(), true);
 		Item::addCreativeItem(Item::get(394, 0));
 		//Raw Mutton
 		ItemFactory::registerItem(new RawMutton(), true);
-	    Item::addCreativeItem(Item::get(423, 0));
+		Item::addCreativeItem(Item::get(423, 0));
 		//Cooked Mutton
 		ItemFactory::registerItem(new CookedMutton(), true);
 	   	Item::addCreativeItem(Item::get(424, 0));
